@@ -1,0 +1,41 @@
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  outline: solid 1px red;
+  &--header {
+    outline: solid 1px green;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-right: 60px;
+    padding-left: 60px;
+    max-width: 768px;
+
+    &--header {
+      padding-right: 65px;
+      padding-left: 65px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-right: 190px;
+    padding-left: 190px;
+    max-width: 1080px;
+
+    &--header {
+      padding-right: 80px;
+      padding-left: 80px;
+      max-width: 1280px;
+    }
+  }
+}
