@@ -1,8 +1,7 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family: var(--main-font-regular);
+  font-weight: var(--main-font-weight);
   font-size: var(--main-text-size);
-  letter-spacing: var(--main-text-letter-spacing);
   color: var(--main-color-dark);
 }
 
