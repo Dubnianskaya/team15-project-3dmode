@@ -1,0 +1,107 @@
+// body {
+//   position: relative;
+// }
+
+.bg-main-hero {
+  display: none;
+}
+@media screen and (min-width: 1444px) {
+  .bg-main-hero {
+    display: block;
+  }
+
+  .container--main-hero {
+    position: relative;
+  }
+
+  .bg-main-hero {
+    .bg-block-left {
+      .block {
+        //   outline: 1px solid black;
+        position: absolute;
+        width: 144px;
+      }
+
+      &--1 {
+        left: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 72px 0px;
+      }
+      &--2 {
+        left: 176px;
+        top: 144px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 72px 0px 0px;
+      }
+      &--3 {
+        left: 32px;
+        top: 288px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0px 72px;
+      }
+      &--4 {
+        left: 176px;
+        top: 432px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 72px 0px;
+      }
+
+      &__img--1 {
+        left: 176px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+      }
+      &__img--2 {
+        top: 553px;
+        left: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+      }
+    }
+    .bg-block-right {
+      .block {
+        //   outline: 1px solid black;
+        position: absolute;
+        width: 144px;
+      }
+
+      &--1 {
+        right: 176px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      }
+      &--2 {
+        right: 176px;
+        top: 144px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px;
+      }
+      &--3 {
+        right: 32px;
+        top: 288px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px 0px;
+      }
+      &--4 {
+        right: 176px;
+        top: 432px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0px 72px;
+      }
+      &--5 {
+        right: 32px;
+        top: 576px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 72px 0px 0px;
+        transform: rotate(180deg);
+      }
+
+      &__img--1 {
+        right: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+      }
+      &__img--2 {
+        top: 432px;
+        right: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
