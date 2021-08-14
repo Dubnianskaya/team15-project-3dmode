@@ -1,0 +1,68 @@
+.modelling-container {
+  padding-top: 32px;
+  padding-bottom: 52px;
+}
+.subtitle {
+  //   margin-right: 31px;
+  margin-left: 9px;
+  margin-bottom: 16px;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--main-color-dark);
+}
+.modelling-hero {
+  width: 100%;
+  font-family: Cera Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--secondary-color-dark);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.modelling-wrapper__right-side {
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .subtitle {
+    margin-left: 60px;
+    font-size: 36px;
+    line-height: 1.25;
+  }
+  .modelling-hero {
+    width: 515px;
+    margin-left: 60px;
+  }
+}
+@media screen and (min-width: 1444px) {
+  .subtitle {
+    margin-left: unset;
+    font-size: 48px;
+    line-height: 1.25;
+  }
+
+  .modelling-wrapper {
+    margin: 0 auto;
+    width: 1030px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .modelling-hero {
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.28;
+  }
+  .modelling-wrapper__right-side {
+    display: flex;
+  }
+  .modelling-wrapper__left-side {
+    margin-left: 32px;
+    display: flex;
+  }
+}
