@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+.logo-footer {
+  text-align: center;
+  display: block;
+  margin-bottom: 19px;
+}
+
 .footer--dark-text {
   font-family: var(--main-font-regular);
   font-weight: var(--main-font-weight);
@@ -27,7 +33,6 @@
 }
 
 .nav-footer {
-  margin-top: 20px;
   margin-bottom: 24px;
 
   &__item:not(:last-child) {
@@ -45,6 +50,7 @@
 
 .email-footer {
   margin-bottom: 24px;
+
   &__text {
     margin-bottom: 8px;
   }
@@ -54,7 +60,35 @@
   &__text {
     margin-bottom: 8px;
   }
-  &__item {
+  &__item:not(:last-child) {
     margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    text-align: left;
+  }
+  .footer--block-flex-secondary,
+  .email-footer__text,
+  .tel-footer__text {
+    text-align: right;
+  }
+
+  .footer--block-flex-main {
+    display: flex;
+    align-items: flex-start;
+  }
+  .address-footer {
+    display: flex;
+  }
+
+  .nav-footer {
+    margin-right: 135px;
+    margin-bottom: 0;
+  }
+  .seti-footer {
+    margin-right: 60px;
+    margin-bottom: 0;
   }
 }
