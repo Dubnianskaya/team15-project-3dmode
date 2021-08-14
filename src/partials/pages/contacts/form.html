@@ -1,4 +1,47 @@
 <!-- Ниже пишем код для Form СТРАНИЦЫ Contacts -->
 <section class="section section--form">
-  <h1>HERE WILL BE FORM Contacts page</h1>
+  <div class="container">
+    <form action="#" class="modal-form">
+      <h3 class="form-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+
+      <label class="contact-form"
+        >Ім’я
+        <input
+          type="text"
+          class="contact-form__input"
+          name="user-name"
+          pattern="[a-zA-Za-яА-Я]+"
+          title="Ім'я повинно містити символи кирилиці або латиниці"
+          required
+          minlength="2"
+        />
+      </label>
+
+      <label class="contact-form">
+        <input
+          type="email"
+          class="contact-form__input"
+          placeholder="email"
+          name="user-mail"
+          required
+        />
+      </label>
+
+      <label class="contact-form"
+        >Повідомлення
+        <textarea
+          name="user-message"
+          class="contact-form__message"
+          placeholder="Залишіть своє повідомлення"
+        ></textarea>
+        <svg>
+          width= "20px" heigth ="20px"
+          <use></use>
+        </svg>
+      </label>
+      <p>Прикріпіть зображення / креслення / STL / Obj / CAD-модель" /</p>
+
+      <button type="submit">ВІДПРАВИТИ</button>
+    </form>
+  </div>
 </section>
