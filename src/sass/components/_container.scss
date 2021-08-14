@@ -36,8 +36,10 @@
     max-width: 1440px;
 
     &--header {
+      align-items: flex-start;
       padding-right: 80px;
       padding-left: 80px;
+      height: 111px;
     }
   }
 }
