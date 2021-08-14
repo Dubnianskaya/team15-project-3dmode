@@ -27,21 +27,22 @@
         />
       </label>
 
-      <label class="contact-form"
+      <label class="contact-form contact-form__field-message"
         >Повідомлення
         <textarea
           name="user-message"
           class="contact-form__message"
           placeholder="Залишіть своє повідомлення"
         ></textarea>
-        <svg>
-          width= "20px" heigth ="20px"
-          <use></use>
+        <svg class="contact-form__message-icon">
+          <use href="./images/icons.svg#icon-clip"></use>
         </svg>
       </label>
-      <p>Прикріпіть зображення / креслення / STL / Obj / CAD-модель" /</p>
+      <p class="contact-form__note">
+        Прикріпіть зображення / креслення / STL / Obj / CAD-модель" /
+      </p>
 
-      <button type="submit">ВІДПРАВИТИ</button>
+      <button class="button--order button-base button-contact" type="submit">ВІДПРАВИТИ</button>
     </form>
   </div>
 </section>
