@@ -4,6 +4,9 @@
   outline: solid 1px red;
   &--header {
     outline: solid 1px green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -30,12 +33,11 @@
   .container {
     padding-right: 190px;
     padding-left: 190px;
-    max-width: 1080px;
+    max-width: 1440px;
 
     &--header {
       padding-right: 80px;
       padding-left: 80px;
-      max-width: 1280px;
     }
   }
 }

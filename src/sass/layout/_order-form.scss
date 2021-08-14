@@ -1,0 +1,15 @@
+.order-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.order-form__title{
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.27;
+    color: var(--main-color-dark);
+    margin-bottom: 44px;
+
+}
