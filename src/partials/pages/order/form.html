@@ -1,66 +1,72 @@
 <!-- Ниже пишем код для Form СТРАНИЦЫ Order -->
-<div class="container container-form">
+<section class="section section--form">
+  <div class="container container-form">
     <form class="order-form">
+      <h3 class="order-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
 
-        <h3 class="order-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
-    
-        <label class="order-form__field">
-                
-            <input type="text" class="modal-form-input" placeholder="Ім’я"  name="user-name" required minlength="2"  pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Введите имя кирилицей или латинскими символами ">                  
-        </label>
-    
-        <label class="modal-form-field">
-            
-                <input type="email" name="user-email" class="modal-form-input" placeholder="Email" required>
-                               
-        </label>
-                    <label for=""></label>
-                <select id="" name="">
-    
-                    <option selected>Види пластика</option>
-                    <option value="PLA">PLA пластик</option>
-                    <option value="CoPET">CoPET пластик</option>
-                    <option value="ABS" >ABS пластик</option>
-                    <option value="PET">PET пластик</option>
-                    <option value="HIPS">HIPS пластик</option>
-                    
-                </select>
-    
-                <label for=""></label>
-                <select id="" name="">
-    
-                    <option selected>Якість друку</option>
-                    <option value="300mkr">300 мікрон</option>
-                    <option value="200mkr">200 мікрон</option>
-                    <option value="100mkr" >100 мікрон</option>
-                    <option value="#" >Труднощі у виборі - ми допоможемо</option>
-    
-    
-                </select>
-    
-                <label for=""></label>
-                <select class="box" id="" name="">
-    
-                    <option selected>Колір</option>
-                    <option value="PLA">Червоний</option>
-                    <option value="CoPET">Зелений</option>
-                    <option value="ABS" >Чорний</option>
-                    <option value="ABS" >Синій</option>
-                    <option value="ABS" >Жовтий</option>
-                    <option value="ABS" >Коричневий</option>
-            
-                </select>
-                
-        <label class="modal-form-field">
-            Повідомлення
-            <textarea name="user-massege" class="modal-form-massege" placeholder="Введите текст"></textarea>
-        </label>
-        <p>*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
-    
-        <button type="submit" class="modal-form-button">
-            ВІДПРАВИТИ
-        </button>
+      <label class="order-form__field">
+        <input
+          type="text"
+          class="modal-form-input"
+          placeholder="Ім’я"
+          name="user-name"
+          required
+          minlength="2"
+          pattern="[a-zA-Zа-яёА-ЯЁ]+"
+          title="Введите имя кирилицей или латинскими символами "
+        />
+      </label>
+
+      <label class="modal-form-field">
+        <input
+          type="email"
+          name="user-email"
+          class="modal-form-input"
+          placeholder="Email"
+          required
+        />
+      </label>
+      <label for=""></label>
+      <select id="" name="">
+        <option selected>Види пластика</option>
+        <option value="PLA">PLA пластик</option>
+        <option value="CoPET">CoPET пластик</option>
+        <option value="ABS">ABS пластик</option>
+        <option value="PET">PET пластик</option>
+        <option value="HIPS">HIPS пластик</option>
+      </select>
+
+      <label for=""></label>
+      <select id="" name="">
+        <option selected>Якість друку</option>
+        <option value="300mkr">300 мікрон</option>
+        <option value="200mkr">200 мікрон</option>
+        <option value="100mkr">100 мікрон</option>
+        <option value="#">Труднощі у виборі - ми допоможемо</option>
+      </select>
+
+      <label for=""></label>
+      <select class="box" id="" name="">
+        <option selected>Колір</option>
+        <option value="PLA">Червоний</option>
+        <option value="CoPET">Зелений</option>
+        <option value="ABS">Чорний</option>
+        <option value="ABS">Синій</option>
+        <option value="ABS">Жовтий</option>
+        <option value="ABS">Коричневий</option>
+      </select>
+
+      <label class="modal-form-field">
+        Повідомлення
+        <textarea
+          name="user-massege"
+          class="modal-form-massege"
+          placeholder="Введите текст"
+        ></textarea>
+      </label>
+      <p>*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+
+      <button type="submit" class="modal-form-button">ВІДПРАВИТИ</button>
     </form>
-    
-</div>
-
+  </div>
+</section>
