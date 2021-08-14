@@ -1,0 +1,103 @@
+.order-hero {
+  padding-top: 12px;
+  padding-bottom: 100%;
+  padding-left: 20px;
+
+  @media screen and (min-width: 768px) {
+    // padding-top: 23px;
+  }
+  @media screen and (min-width: 1444px) {
+    // padding-bottom: 100px;
+    padding-left: 60px;
+  }
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding-right: auto;
+}
+
+.order-title {
+  font-family: var(--main-font-regular);
+  color: var(--main-color-dark);
+  max-width: 280px;
+  height: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    max-width: 648px;
+    margin-bottom: 34px;
+  }
+  @media screen and (min-width: 1444px) {
+    font-size: 48px;
+    max-width: 624px;
+    margin-bottom: 40px;
+  }
+}
+
+.order-hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    // margin-bottom: 100px;
+  }
+}
+
+.order-hero__text {
+  font-family: var(--main-font-regular);
+  color: var(--secondary-color-dark);
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    max-width: 381px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1444px) {
+    // height: 46px;
+    max-width: 515px;
+    font-size: 18px;
+    line-height: 1.28;
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.order-hero__photo {
+  &-track {
+    border-radius: 0% 60% 60% 0%;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+  &-led {
+    border-radius: 60% 0% 60% 0%;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+  &-mushroom {
+    border-radius: 0% 0% 60% 0%;
+    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.order-hero__photo {
+  display: flex;
+  display: inline-block;
+  margin-left: 40px;
+  bottom: 0px;
+
+  @media (max-width: 1444px) {
+    display: none;
+  }
+}
