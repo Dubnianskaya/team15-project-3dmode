@@ -1,27 +1,29 @@
-// body {
-//   position: relative;
-// }
-
 .bg-main-hero {
   display: none;
 }
+
+// .main-hero-list__walle {
+//   position: relative;
+//   z-index: 10;
+// }
+
 @media screen and (min-width: 1444px) {
   .bg-main-hero {
     display: block;
   }
 
-  .container--main-hero {
-    position: relative;
+  .block {
+    outline: 1px solid black;
+    position: absolute;
+    width: 144px;
   }
 
+  .container--main-hero {
+    position: relative;
+    // overflow: hidden;
+  }
   .bg-main-hero {
     .bg-block-left {
-      .block {
-        //   outline: 1px solid black;
-        position: absolute;
-        width: 144px;
-      }
-
       &--1 {
         left: 32px;
         box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
@@ -57,12 +59,6 @@
       }
     }
     .bg-block-right {
-      .block {
-        //   outline: 1px solid black;
-        position: absolute;
-        width: 144px;
-      }
-
       &--1 {
         right: 176px;
         box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
@@ -101,6 +97,67 @@
         top: 432px;
         right: 32px;
         box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    .bg-block-bottom {
+      &--1 {
+        top: 697px;
+        left: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 72px 0px;
+      }
+      &--2 {
+        top: 847px;
+        right: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 72px 0px;
+        transform: rotate(-180deg);
+      }
+      &--3 {
+        top: 991px;
+        left: 1360px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px;
+      }
+      &--4 {
+        top: 1113px;
+        left: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px 0px;
+      }
+      &--5 {
+        top: 1860px;
+        right: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px 0px;
+        transform: rotate(90deg);
+      }
+      &--6 {
+        top: 1932px;
+        left: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0px 72px;
+      }
+      &--7 {
+        width: 80px;
+        height: 144px;
+        top: 2441px;
+        left: 0px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 72px 72px 0px;
+      }
+      &--8 {
+        top: 2499px;
+        right: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px 0px;
+      }
+      &--9 {
+        top: 2643px;
+        right: 176px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0px 72px;
       }
     }
   }
