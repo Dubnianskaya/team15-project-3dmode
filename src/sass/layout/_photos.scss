@@ -2,24 +2,26 @@
   padding-bottom: 153px;
 }
 
-.photos__title {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 1.25;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
+.photos {
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
 
-.photos__item:nth-child(n + 4) {
-  display: none;
-}
+  &__item:nth-child(n + 4) {
+    display: none;
+  }
 
-.photos__item:nth-child(-n + 2) {
-  margin-bottom: 16px;
-}
+  &__item:nth-child(-n + 2) {
+    margin-bottom: 16px;
+  }
 
-.photos__image {
-  max-width: 280px;
+  &__image {
+    max-width: 280px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -27,39 +29,38 @@
     padding-bottom: 129px;
   }
 
-  .photos__title {
-    font-size: 36px;
-    line-height: 1.25;
-    margin-bottom: 32px;
-  }
+  .photos {
+    &__title {
+      font-size: 36px;
+      line-height: 1.25;
+      margin-bottom: 32px;
+    }
 
-  .photos__list {
-    display: flex;
-    flex-flow: row wrap;
-  }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-  .photos__image {
-    max-width: 100%;
-  }
+    &__image {
+      max-width: 100%;
+    }
 
-  .photos__item {
-    flex: auto;
-  }
+    &__item:nth-child(n + 4) {
+      display: block;
+    }
 
-  .photos__item:nth-child(n + 4) {
-    display: block;
-  }
+    &__item:nth-child(-n + 3) {
+      margin-bottom: 20px;
+    }
 
-  .photos__item:nth-child(-n + 3) {
-    margin-bottom: 20px;
-  }
+    &__item:nth-child(n + 4) {
+      margin-bottom: 20px;
+    }
 
-  .photos__item:nth-child(n + 4) {
-    margin-bottom: 20px;
-  }
-
-  .photos__item:nth-child(n + 10) {
-    margin-bottom: 0;
+    &__item:nth-child(n + 10) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -68,21 +69,23 @@
     padding-bottom: 201px;
   }
 
-  .photos__title {
-    font-size: 48px;
-    line-height: 1.25;
-    margin-bottom: 52px;
-  }
+  .photos {
+    &__title {
+      font-size: 48px;
+      line-height: 1.25;
+      margin-bottom: 52px;
+    }
 
-  .photos__item:nth-child(-n + 3) {
-    margin-bottom: 32px;
-  }
+    &__item:nth-child(-n + 3) {
+      margin-bottom: 32px;
+    }
 
-  .photos__item:nth-child(n + 4) {
-    margin-bottom: 32px;
-  }
+    &__item:nth-child(n + 4) {
+      margin-bottom: 32px;
+    }
 
-  .photos__item:nth-child(n + 10) {
-    margin-bottom: 0;
+    &__item:nth-child(n + 10) {
+      margin-bottom: 0;
+    }
   }
 }
