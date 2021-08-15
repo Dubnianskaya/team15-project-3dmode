@@ -1,9 +1,9 @@
 <!-- Ниже пишем код для Photos ГЛАВНОЙ СТРАНИЦЫ -->
-<section>
+<section class="section photos--section">
   <div class="container">
-    <h2>більше фото</h2>
-    <ul class="examples list">
-      <li class="examples__item">
+    <h2 class="photos__title">більше фото</h2>
+    <ul class="photos__list list">
+          <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -35,20 +35,20 @@
           />
 
           <source
-            media="(min-width: 320px)"
+            media="(max-width: 767px)"
             srcset="./images/gallery/models_phone.webp 1x, ./images/gallery/models_phone@2x.webp 2x"
             type="image/webp"
           />
           <source
-            media="(max-width: 320px)"
+            media="(max-width: 767px)"
             srcset="./images/gallery/models_phone.jpg 1x, ./images/gallery/models_phone@2x.jpg 2x"
           />
 
-          <img class="examples__image" src="#" alt="" />
+          <img data-modal-open class="photos__image" src="#" alt="" />
         </picture>
       </li>
 
-      <li>
+      <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -83,7 +83,7 @@
           />
 
           <source
-            media="(min-width: 320px)"
+            media="(max-width: 767px)"
             srcset="
               ./images/gallery/architectural_phone.webp    1x,
               ./images/gallery/architectural_phone@2x.webp 2x
@@ -91,17 +91,17 @@
             type="image/webp"
           />
           <source
-            media="(max-width: 320px)"
+            media="(max-width: 767px)"
             srcset="
               ./images/gallery/architectural_phone.jpg    1x,
               ./images/gallery/architectural_phone@2x.jpg 2x
             "
           />
 
-          <img class="examples__image" src="#" alt="Перекриття" />
+          <img class="photos__image" src="#" alt="Перекриття" />
         </picture>
       </li>
-      <li>
+      <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -127,19 +127,22 @@
           />
 
           <source
-            media="(min-width: 320px)"
+            media="(max-width: 767px)"
             srcset="./images/gallery/walle_phone.webp 1x, ./images/gallery/walle_phone@2x.webp 2x"
             type="image/webp"
           />
           <source
-            media="(max-width: 320px)"
+            media="(max-width: 767px)"
             srcset="./images/gallery/walle_phone.jpg 1x, ./images/gallery/walle_phone@2x.jpg 2x"
           />
 
-          <img class="examples__image" src="#" alt="Робот" />
+          <img class="photos__image" src="#" alt="Робот" />
         </picture>
       </li>
-      <li>
+
+
+      
+      <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -160,10 +163,10 @@
             media="(min-width: 768px)"
             srcset="./images/gallery/head_tablet.jpg 1x, ./images/gallery/head_tablet@2x.jpg 2x"
           />
-          <img class="examples__image" src="#" alt="Череп" />
+          <img class="photos__image" src="#" alt="Череп" />
         </picture>
       </li>
-      <li>
+      <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -184,10 +187,10 @@
             media="(min-width: 768px)"
             srcset="./images/gallery/tank_tablet.jpg 1x, ./images/gallery/tank_tablet@2x.jpg 2x"
           />
-          <img class="examples__image" src="#" alt="Танк" />
+          <img class="photos__image" src="#" alt="Танк" />
         </picture>
       </li>
-      <li>
+      <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -211,10 +214,11 @@
             media="(min-width: 768px)"
             srcset="./images/gallery/lamps_tablet.jpg 1x, ./images/gallery/lamps_tablet@2x.jpg 2x"
           />
-          <img class="examples__image" src="#" alt="Лампи" />
+          <img class="photos__image" src="#" alt="Лампи" />
         </picture>
       </li>
-      <li>
+      
+      <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -235,10 +239,10 @@
             media="(min-width: 768px)"
             srcset="./images/gallery/car_tablet.jpg 1x, ./images/gallery/car_tablet@2x.jpg 2x"
           />
-          <img class="examples__image" src="#" alt="Машина" />
+          <img class="photos__image" src="#" alt="Машина" />
         </picture>
       </li>
-      <li>
+      <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -271,10 +275,10 @@
               ./images/gallery/building_tablet@2x.jpg 2x
             "
           />
-          <img class="examples__image" src="#" alt="Будівля" />
+          <img class="photos__image" src="#" alt="Будівля" />
         </picture>
       </li>
-      <li>
+      <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -307,10 +311,11 @@
               ./images/gallery/mushroom_tablet@2x.jpg 2x
             "
           />
-          <img class="examples__image" src="#" alt="Лампа" />
+          <img class="photos__image" src="#" alt="Лампа" />
         </picture>
       </li>
-      <li>
+      
+      <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -343,10 +348,10 @@
               ./images/gallery/led_lamp_tablet@2x.jpg 2x
             "
           />
-          <img class="examples__image" src="#" alt="Led-Лампа" />
+          <img class="photos__image" src="#" alt="Led-Лампа" />
         </picture>
       </li>
-      <li>
+      <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -370,10 +375,10 @@
             media="(min-width: 768px)"
             srcset="./images/gallery/track_tablet.jpg 1x, ./images/gallery/track_tablet@2x.jpg 2x"
           />
-          <img class="examples__image" src="#" alt="Баггі" />
+          <img class="photos__image" src="#" alt="Баггі" />
         </picture>
       </li>
-      <li>
+      <li class="photos__item">
         <picture>
           <source
             media="(min-width: 1444px)"
@@ -406,9 +411,13 @@
               ./images/gallery/florarium_tablet@2x.jpg 2x
             "
           />
-          <img class="examples__image" src="#" alt="Флорарiум" />
+          <img class="photos__image" src="#" alt="Флорарiум" />
         </picture>
       </li>
+      
+     
     </ul>
   </div>
 </section>
+
+
