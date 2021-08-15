@@ -11,6 +11,7 @@
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
 }
 
 .device-menu.is-open {
@@ -19,20 +20,21 @@
   pointer-events: auto;
 }
 
-.menu-close-btn {
-  background-color: transparent;
-  border: none;
-  line-height: 0;
-  padding: 0;
-  cursor: pointer;
-  padding-top: 10px;
-
-  &__icon {
-    width: 40px;
-    height: 40px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.header-menu-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 22px;
 }
+
+.device-menu__icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--main-color-dark);
+  margin-left: 28px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
 .container--device-menu {
   height: 100%;
   width: 100%;
@@ -77,5 +79,28 @@
     border-radius: 3px 0;
     transform: translateY(-50%);
     margin-right: 11px;
+  }
+}
+
+// ============= 768+ ================
+
+@media screen and(min-width:768px) {
+  .header-menu-wrapper {
+    padding-top: 20px;
+  }
+
+  .device-menu__icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 187px;
+    margin-right: 85px;
+  }
+}
+
+// ============= 1444+ ================
+
+@media screen and(min-width:1444px) {
+  .device-menu {
+    display: none;
   }
 }
