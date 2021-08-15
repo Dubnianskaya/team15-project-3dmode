@@ -9,6 +9,14 @@
 
   &__iconwrapper--menu {
     fill: var(--main-color-dark);
+    transition-property: fill;
+    transition-duration: var(--main-transition-duration);
+    transition-timing-function: var(--main-transition-function);
+
+    :hover {
+      fill: var(--accent-color);
+      cursor: pointer;
+    }
   }
 
   &__wrapper {
@@ -27,7 +35,11 @@
   }
 
   &__iconwrapper--tel {
-    fill: var(--accent-color-icons);
+    fill: var(--accent-color);
+
+    :hover {
+      cursor: pointer;
+    }
   }
 
   &__contacts {
@@ -35,6 +47,7 @@
   }
 
   &__lang {
+    margin-left: 21px;
     text-transform: uppercase;
     font-family: var(--secondary-font-regular);
     font-weight: 700;
@@ -42,7 +55,13 @@
     line-height: 1.29;
     letter-spacing: 0.01em;
     color: var(--main-color-light);
-    margin-left: 21px;
+    transition: color var(--main-transition-duration) var(--main-transition-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      cursor: pointer;
+    }
   }
 }
 
@@ -72,7 +91,7 @@
     }
 
     &__icontel {
-      fill: var(--accent-color-icons);
+      fill: var(--accent-color);
       margin-right: 4px;
     }
 
@@ -80,6 +99,12 @@
       line-height: 1.25;
       letter-spacing: 0.01em;
       color: var(--secondary-color-dark);
+      transition: color var(--main-transition-duration) var(--main-transition-function);
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
     }
 
     &__lang {
@@ -136,7 +161,7 @@
     }
 
     &__iconwrapper--arrow {
-      fill: var(--accent-color-icons);
+      fill: var(--accent-color);
       margin-left: 4px;
     }
 
@@ -160,4 +185,9 @@
 
 .arrow-up {
   display: none;
+}
+
+.header__lang,
+.header__iconwrapper--tel {
+  position: relative;
 }
