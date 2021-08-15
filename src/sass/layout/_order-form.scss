@@ -23,6 +23,11 @@
     border-bottom: 1px solid var(--main-color-dark);
     
 }
+.order-form__select-option:checked + .select::after{
+    transform: rotate(180deg);
+
+}
+
 .select::after{
     content: "";
     display: block;
@@ -38,8 +43,8 @@
     right: 0;
     margin-top: -6.5px;
     cursor: pointer;
-    
-
+    pointer-events: none;
+   
 }
 
 
@@ -58,7 +63,7 @@
     display: block;
     width: 100%;
     outline: none;
-
+    
 
 
    
@@ -173,12 +178,12 @@
     .order-form__note{
         text-align: left;
     }
-    .button--order{
-        width: 177px;
-        margin-left: auto;
+    // .button--order{
+    //     width: 177px;
+    //     margin-left: auto;
         
 
-    }
+    // }
     
 
 }
