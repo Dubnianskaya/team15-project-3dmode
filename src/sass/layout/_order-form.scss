@@ -37,8 +37,11 @@
     z-index: 1;
     right: 0;
     margin-top: -6.5px;
+    cursor: pointer;
+    
 
 }
+
 
 .select select{
     border: 0;
@@ -54,6 +57,8 @@
     padding: 8px 0px;
     display: block;
     width: 100%;
+    outline: none;
+
 
 
    
@@ -63,6 +68,8 @@
     border: none;
     border-bottom: 1px solid var(--main-color-dark);
     padding: 0 0 8px 0;
+    outline: none;
+    
 
         &::placeholder{
             font-family: var(--main-font-regular);
@@ -101,6 +108,7 @@
     height: 199px;
     padding: 22px 20px 0 20px;
     resize: none;
+    outline: none;
    
     
     
