@@ -1,1 +1,163 @@
+.header {
+  padding-top: 29px;
+  padding-bottom: 32px;
+  outline: 1px solid yellowgreen;
+  &__logo {
+    display: block;
+    width: 101px;
+  }
 
+  &__iconwrapper--menu {
+    fill: var(--main-color-dark);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__navigation {
+    display: none;
+  }
+
+  &__iconwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__iconwrapper--tel {
+    fill: var(--accent-color-icons);
+  }
+
+  &__contacts {
+    display: none;
+  }
+
+  &__lang {
+    text-transform: uppercase;
+    font-family: var(--secondary-font-regular);
+    font-weight: 700;
+    font-size: var(--secondary-text-size);
+    line-height: 1.29;
+    letter-spacing: 0.01em;
+    color: var(--main-color-light);
+    margin-left: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 35px;
+    &__logo {
+      width: 125px;
+    }
+
+    &__iconwrapper--tel {
+      display: none;
+    }
+
+    &__contacts {
+      display: block;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+
+    &__icontel {
+      fill: var(--accent-color-icons);
+      margin-right: 4px;
+    }
+
+    &__link {
+      line-height: 1.25;
+      letter-spacing: 0.01em;
+      color: var(--secondary-color-dark);
+    }
+
+    &__lang {
+      margin-left: 0;
+      margin-right: 28px;
+    }
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 12px;
+    &__logo {
+      width: 192px;
+    }
+    &__navigation {
+      display: block;
+    }
+
+    &__menu {
+      display: flex;
+    }
+
+    &__menuitem:not(:last-child) {
+      margin-right: 54px;
+    }
+
+    &__menuitem--services {
+      display: flex;
+      align-items: center;
+
+      &:hover .arrow-down,
+      &:focus .arrow-down {
+        display: none;
+      }
+
+      &:hover .arrow-up,
+      &:focus .arrow-up {
+        display: flex;
+      }
+    }
+
+    &__menulink {
+      font-family: var(--secondary-font-regular);
+      font-size: 18px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: var(--secondary-color-dark);
+    }
+
+    &__iconwrapper--menu {
+      display: none;
+    }
+
+    &__iconwrapper--arrow {
+      fill: var(--accent-color-icons);
+      margin-left: 4px;
+    }
+
+    &__arrow {
+      padding-top: 5px;
+    }
+
+    &__icontel {
+      margin-right: 8px;
+    }
+
+    &__wrapper {
+      align-items: flex-start;
+    }
+
+    &__lang {
+      margin-right: 94px;
+    }
+  }
+}
+
+.arrow-up {
+  display: none;
+}

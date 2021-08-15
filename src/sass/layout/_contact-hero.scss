@@ -1,24 +1,19 @@
-.contact-section {
-  padding-top: 36px;
-  padding-bottom: 52px;
-}
-
-.subtitle {
+.contact-subtitle {
   text-align: left;
-  font-weight: bold;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.25;
+  margin-bottom: 16px;
   color: var(--main-color-dark);
 
   @media screen and (min-width: 768px) {
     font-size: 36px;
-    line-height: 45px;
+    line-height: 1.25;
     margin-bottom: 24px;
   }
 
   @media screen and (min-width: 1440px) {
     font-size: 48px;
-    line-height: 60px;
+    line-height: 1.25;
   }
 }
 
@@ -42,19 +37,14 @@
   }
 }
 
-@media screen and (min-width: 320px) {
-  .iframe-video {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+.iframe-video {
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .iframe-video {
     width: 247px;
     height: 192px;
-    padding-top: 0;
-    padding-bottom: 0;
   }
 }
 
@@ -62,32 +52,36 @@
   .iframe-video {
     width: 515px;
     height: 315px;
-    padding-top: 0;
-    padding-bottom: 0;
   }
 }
 
 .contact-section__description {
-  font-weight: 300;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: var(--secondary-color-dark);
-  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section__description:first-child {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .contact-section__description {
     font-size: 18px;
-    line-height: 23px;
+    line-height: 1.28;
+    margin-top: 24px;
   }
 }
 
 .contact-section__description--emoji {
   position: relative;
-  font-weight: 300;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: var(--secondary-color-dark);
+  margin-top: 16px;
 }
 
 .contact-section__description--emoji::after {
@@ -103,4 +97,26 @@
   background-color: black;
 
   background-image: url(../images/order/emoji.jpg);
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-section__description--emoji::after {
+    width: 49px;
+    height: 49px;
+    top: 85px;
+    left: -1px;
+    margin-left: 0;
+  }
+
+  .contact-section__description--emoji::after {
+    background-image: url(../images/order/emoji_desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-section__description--emoji {
+    font-size: 18px;
+    line-height: 1.28;
+    margin-top: 24px;
+  }
 }
