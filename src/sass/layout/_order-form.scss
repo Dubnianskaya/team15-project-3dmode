@@ -9,6 +9,53 @@
   }
 }
 
+.order-form__field{
+    margin-bottom: 44px;
+   
+}
+.select{
+    position: relative;
+    border-bottom: 1px solid var(--main-color-dark);
+    
+}
+.select::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13px 9.5px 0 9.5px;
+    border-color: #2b2b2b transparent transparent transparent;
+    border-radius: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    right: 0;
+    margin-top: -6.5px;
+    cursor: pointer;
+    pointer-events: none;
+    
+
+
+}
+
+
+.select select{
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: var(--main-font-regular);
+    color: var(--secondary-color-dark);
+    font-size: 16px;
+    line-height: 1.25;
+    font-style: normal;
+    font-weight: 400;
+    padding: 8px 0px;
+    display: block;
+    width: 100%;
+    outline: none;
+    
 .order-form {
   display: flex;
   flex-direction: column;
@@ -19,6 +66,7 @@
   font-size: 18px;
   line-height: 1.27;
   color: var(--main-color-dark);
+
 
   margin-bottom: 28px;
 }
@@ -52,6 +100,14 @@
   pointer-events: none;
 }
 
+
+.order-form__select-option{
+    width: 100%;
+
+}
+
+.order-form__field_massege{
+    
 .select select {
   border: 0;
   background: none;
@@ -102,6 +158,21 @@
 .order-form__massege-box {
   position: relative;
 }
+.order-form__message-icon {
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 20px;
+    fill: #cdcdcd;
+    top: 161px;
+    left: 237px;
+  }
+.order-form__message-icon:hover,
+.order-form__message-icon:focus {
+  fill: var(--accent-color);
+}
+
+.order-form__note{
 .order-form__massege {
   margin-top: 4px;
   border: 1px solid var(--main-color-dark);
@@ -113,6 +184,7 @@
   outline: none;
 
   &::placeholder {
+
     font-family: var(--main-font-regular);
     font-style: normal;
     font-weight: 400;
@@ -121,6 +193,14 @@
     color: var(--color-light-placeholder);
   }
 }
+
+
+
+/////////////////////////////////////////
+
+
+
+@media screen and (min-width: 768px){
 
 .order-form__message-icon {
   position: absolute;
@@ -131,6 +211,7 @@
   top: 161px;
   left: 237px;
 }
+
 
 .order-form__note {
   font-family: var(--main-font-regular);
@@ -155,12 +236,27 @@
     margin-bottom: 35px;
   }
 
+
+    }
+    .order-form__message-icon{
+        left: 379px;
+    }
+    
+    .order-form__note{
+        text-align: left;
+    }
+    .order-form__btn{
+        width: 177px;
+        margin-left: auto;
+        
+
   .order-form__field_massege {
     text-align: left;
   }
   .order-form__message-icon {
     left: 379px;
   }
+
 
   .order-form__note {
     text-align: left;
