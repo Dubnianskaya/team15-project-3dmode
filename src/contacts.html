@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/logo/favicon.png" />
     <title>Contacts</title>
   </head>
   <body>
@@ -12,19 +13,22 @@
     <!-- HEADER -->
     <include src="./partials/header.html"></include>
     <!-- END HEADER -->
+    <!-- DEVICE-MENU -->
+    <include src="./partials/device-menu-contacts.html"></include>
+    <!-- END DEVICE-MENU -->
 
     <main>
       <!-- HERO -->
       <include src="./partials/pages/contacts/hero.html"></include>
       <!-- END HERO -->
+      
+      <!-- FORM -->
+      <include src="./partials/pages/contacts/form.html"></include>
+      <!-- END FORM -->
 
       <!-- CONTACTS -->
       <include src="./partials/pages/contacts/contacts.html"></include>
       <!-- END CONTACTS -->
-
-      <!-- FORM -->
-      <include src="./partials/pages/contacts/form.html"></include>
-      <!-- END FORM -->
     </main>
 
     <!-- FOOTER -->
@@ -33,5 +37,6 @@
 
     <!-- SCRIPTS -->
     <script src="./contacts.js"></script>
+    <script src="./menu.js"></script>
   </body>
 </html>

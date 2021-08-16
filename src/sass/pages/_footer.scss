@@ -1,4 +1,6 @@
 .footer {
+  background: #f5f5fa;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -30,7 +32,6 @@
   font-size: var(--main-text-size);
   line-height: 1.25;
   text-align: center;
-  text-transform: capitalize;
   color: #487996;
   font-style: normal;
 }
@@ -100,7 +101,7 @@
 @media screen and (min-width: 1444px) {
   .footer--block-flex {
     display: flex;
-    justify-content: center;
+    justify-content: left;
   }
   .logo-footer {
     margin-right: 136px;

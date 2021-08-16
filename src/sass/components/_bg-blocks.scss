@@ -1,0 +1,249 @@
+.bg-main-hero {
+  display: none;
+}
+
+// .main-hero-list__walle {
+//   position: relative;
+//   z-index: 10;
+// }
+
+@media screen and (min-width: 1444px) {
+  .bg-main-hero {
+    display: block;
+  }
+
+  .block {
+    // outline: 1px solid black;
+    position: absolute;
+    width: 144px;
+    height: 144px;
+  }
+
+  .container--main-hero {
+    position: relative;
+    // overflow: hidden;
+  }
+  .bg-main-hero {
+    .bg-block-header {
+      &--1 {
+        top: -156px;
+        left: 32px;
+        border-radius: 72px 0px 0px 0px;
+      }
+      &--2 {
+        top: -156px;
+        left: 293px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px 0px 0px 72px;
+        transform: rotate(180deg);
+      }
+      &--3 {
+        height: 111px;
+        top: -123px;
+        left: 570px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 72px 72px;
+      }
+      &--4 {
+        // background-color: red;
+        top: -156px;
+        right: 293px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px 0px 0px 72px;
+      }
+    }
+
+    .bg-block-left {
+      &--1 {
+        left: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 72px 0px;
+      }
+      &--2 {
+        left: 176px;
+        top: 144px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 72px 0px 0px;
+      }
+      &--3 {
+        left: 32px;
+        top: 288px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0px 72px;
+      }
+      &--4 {
+        left: 176px;
+        top: 432px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 72px 0px;
+      }
+
+      &__img--1 {
+        left: 176px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+        border-radius: 72px;
+        background-size: cover;
+
+        background-image: url(../images/bg-blocks/img1bg-block.jpg);
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/bg-blocks/img1bg-block@2x.jpg);
+        }
+      }
+      &__img--2 {
+        top: 553px;
+        left: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+        border-radius: 72px;
+
+        background-image: url(../images/bg-blocks/img3bg-block.jpg);
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/bg-blocks/img3bg-block@2x.jpg);
+        }
+      }
+    }
+    .bg-block-right {
+      &--1 {
+        right: 176px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      }
+      &--2 {
+        right: 176px;
+        top: 144px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px;
+      }
+      &--3 {
+        right: 32px;
+        top: 288px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px 0px;
+      }
+      &--4 {
+        right: 176px;
+        top: 432px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0px 72px;
+      }
+      &--5 {
+        right: 32px;
+        top: 576px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 72px 0px 0px;
+        transform: rotate(180deg);
+      }
+
+      &__img--1 {
+        right: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+        border-radius: 0px 0px 72px 0px;
+
+        background-image: url(../images/bg-blocks/img2bg-block.jpg);
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/bg-blocks/img2bg-block@2x.jpg);
+        }
+      }
+      &__img--2 {
+        top: 432px;
+        right: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+        border-radius: 72px 72px 0px 0px;
+
+        background-image: url(../images/bg-blocks/img4bg-block.jpg);
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/bg-blocks/img4bg-block@2x.jpg);
+        }
+      }
+    }
+
+    .bg-block-bottom {
+      &--1 {
+        top: 697px;
+        left: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 72px 0px;
+      }
+      &--2 {
+        top: 847px;
+        right: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 72px 0px;
+        transform: rotate(-180deg);
+      }
+      &--3 {
+        width: 80px;
+        height: 144px;
+        top: 991px;
+        left: 1360px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px 0px 0px 72px;
+      }
+      &--4 {
+        top: 1113px;
+        left: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px 0px;
+      }
+      &--5 {
+        top: 1860px;
+        right: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px 0px;
+        transform: rotate(90deg);
+      }
+      &--6 {
+        top: 1932px;
+        left: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0px 72px;
+      }
+      &--7 {
+        width: 80px;
+        height: 144px;
+        top: 2441px;
+        left: 0px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 72px 72px 0px;
+      }
+      &--8 {
+        top: 2499px;
+        right: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 72px 0px;
+      }
+      &--9 {
+        top: 2643px;
+        right: 176px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 0px 72px;
+      }
+
+      &__img {
+        top: 1357px;
+        right: 32px;
+        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.25);
+        border-radius: 72px;
+        background-size: cover;
+
+        background-image: url(../images/bg-blocks/img5bg-block.jpg);
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(../images/bg-blocks/img5bg-block@2x.jpg);
+        }
+      }
+    }
+  }
+}

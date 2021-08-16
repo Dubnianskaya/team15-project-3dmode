@@ -1,0 +1,50 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(43, 43, 43, 0.8);
+  backdrop-filter: blur(4px);
+  opacity: 1;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 236px;
+  height: 157px;
+
+  &__image {
+    width: 236px;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 554px;
+    height: 369px;
+    &__image {
+      width: 554px;
+    }
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .modal {
+    width: 906px;
+    height: 605px;
+    &__image {
+      width: 906px;
+    }
+  }
+}

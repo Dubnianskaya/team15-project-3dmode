@@ -6,32 +6,21 @@
 
 .examples__list {
     display: flex;
-    // flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
-    margin-left: -15px;
-    margin-top: -15px;
-}
-
-.examples__item {
-    flex-basis: calc((100% - 30px) / 2);
-    margin-left: 15px;
-    margin-top: 15px;
+    align-items: center;
+    
 }
 
 .examples__border {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 158px;
+    min-height: 158px;
     background: var(--background-color-white);
     opacity: 0.8;
     box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
     border-radius: 50px 0px;
-}
-
-.examples__photo {
-    margin: 0 auto;
 }
 
 .examples__description {
@@ -40,8 +29,19 @@
     font-size: var(--secondary-text-size);
 }
 
-.examples__description--coub {
-    margin-top: 9px;
+@media screen and (max-width: 767px) {
+    .examples__list {
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-top: -15px;
+    }
+
+    .examples__item {
+        flex-basis: calc((100% - 30px) / 2);
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -52,25 +52,22 @@
 
     .examples__list {
         margin-left: -13px;
+        margin-top: -13px;
     }
     
     .examples__item {
         flex-basis: calc((100% - 52px) / 4);
         margin-left: 13px;
+        margin-top: 13px;
     }
 
     .examples__border {
-        height: 158px;
+        min-height: 182px;
     }
 
     .examples__description {
         margin-top: 20px;
     }
-
-    .examples__description--coub {
-        margin-top: 11px;
-    }
-
 }
 
 @media screen and (min-width: 1444px) {
@@ -80,23 +77,23 @@
 
     .examples__list {
         margin-left: -21px;
+        margin-top: -21px;
     }
     
     .examples__item {
         flex-basis: calc((100% - 84px) / 4);
         margin-left: 21px;
+        margin-top: 21px;
     }
 
     .examples__border {
-        height: 298px;
+        min-height: 298px;
     }
 
     .examples__description {
+        font-size: 18px;
+        line-height: 1.28;
         margin-top: 38px;
+        max-width: 180px;
     }
-
-    .examples__description--coub {
-        margin-top: 24px;
-    }
-
 }
