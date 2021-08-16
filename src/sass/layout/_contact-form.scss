@@ -1,13 +1,18 @@
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1444px) {
   .container-form {
     display: flex;
     align-items: flex-start;
     flex-flow: row-reverse;
+    margin: 0 auto;
+    max-width: 1444px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .section-contacts {
+@media screen and (min-width: 1444px) {
+  .section--form {
+    padding-bottom: 0;
     width: 50%;
   }
 }
