@@ -1,24 +1,23 @@
 .dropdown-menu {
-  display: block;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  display: none;
   position: absolute;
-  top: 130%;
+  top: 100%;
   transition-property: visibility, opacity;
   transition-duration: var(--main-transition-duration);
   transition-timing-function: var(--main-transition-function);
 }
 
 .header__lang:hover > .dropdown-menu {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
+  display: block;
 }
 
 .dropdown-menu {
   background-color: var(--background-color-white);
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+
+  &__item:first-child {
+    margin-top: 10px;
+  }
 
   &__item:not(:last-child) {
     margin-bottom: 10px;
@@ -44,43 +43,13 @@
 }
 
 .dropdown-menu--tel {
-  display: flex;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  background-color: transparent;
+  box-shadow: none;
+  display: none;
   position: absolute;
-  top: 175%;
+  top: 100%;
   left: -330%;
-  transition-property: visibility, opacity;
-  transition-duration: var(--main-transition-duration);
-  transition-timing-function: var(--main-transition-function);
-}
 
-.header__iconwrapper--tel:hover > .dropdown-menu--tel {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.dropdown-menu--tel {
-  flex-direction: column;
-  width: 165px;
-  padding: 16px 5px 16px 8px;
-  background-color: var(--background-color-white);
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    transform: rotate(45deg);
-
-    width: 20px;
-    height: 20px;
-    background-color: var(--background-color-white);
-  }
   &__item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -97,5 +66,36 @@
     &:focus {
       color: var(--accent-color);
     }
+  }
+}
+
+.header__iconwrapper--tel:hover > .dropdown-menu--tel {
+  display: flex;
+}
+
+.dropdown-menu__pseudowrapper {
+  height: 20px;
+}
+
+.dropdown-menu--tel__list {
+  flex-direction: column;
+  position: relative;
+  width: 165px;
+  margin-top: 20px;
+  padding: 16px 5px 16px 8px;
+  background-color: var(--background-color-white);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
+
+    width: 20px;
+    height: 20px;
+    background-color: var(--background-color-white);
   }
 }

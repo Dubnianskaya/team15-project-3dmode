@@ -34,6 +34,17 @@
               <use href="./images/icons.svg#icon-up-arrow"></use>
             </svg>
           </div>
+          <ul class="submenu list">
+            <li class="submenu__item">
+              <a class="submenu__link link" href="./modeling.html">3D Моделювання</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link link" href="./scanning.html">3D Сканування</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link link" href="./printing.html">3D Друк</a>
+            </li>
+          </ul>
         </li>
         <li class="header__menuitem">
           <a class="header__menulink link" href="./order.html">Замовити</a>
@@ -48,23 +59,26 @@
         <svg class="header__icon" width="24" height="24">
           <use href="./images/icons.svg#icon-tel"></use>
         </svg>
-        <ul class="dropdown-menu dropdown-menu--tel list" hidden>
-          <li class="dropdown-menu--tel__item">
-            <a class="dropdown-menu--tel__link link" href="tel:+380936432288"
-              >+38 (093) 643 22 88</a
-            >
-          </li>
-          <li class="dropdown-menu--tel__item">
-            <a class="dropdown-menu--tel__link link" href="tel:+380503454423"
-              >+38 (050) 345 44 23</a
-            >
-          </li>
-        </ul>
+        <div class="dropdown-menu dropdown-menu--tel">
+          <div class="dropdown-menu__pseudowrapper"></div>
+          <ul class="dropdown-menu--tel__list list">
+            <li class="dropdown-menu--tel__item">
+              <a class="dropdown-menu--tel__link link" href="tel:+380936432288"
+                >+38 (093) 643 22 88</a
+              >
+            </li>
+            <li class="dropdown-menu--tel__item">
+              <a class="dropdown-menu--tel__link link" href="tel:+380503454423"
+                >+38 (050) 345 44 23</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="header__langwrapper">
         <div class="header__lang" lang="en">
           ukr
-          <ul class="dropdown-menu list" hidden>
+          <ul class="dropdown-menu list">
             <li class="dropdown-menu__item">
               <p class="dropdown-menu__lang">ukr</p>
             </li>

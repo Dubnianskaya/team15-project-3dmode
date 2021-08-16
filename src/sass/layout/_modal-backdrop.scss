@@ -22,20 +22,20 @@
   transform: translate(-50%, -50%);
   width: 236px;
   height: 157px;
-}
 
-.modal__image {
-  width: 236px;
-  height: 100%;
+  &__image {
+    width: 236px;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .modal {
     width: 554px;
     height: 369px;
-  }
-  .modal__image {
-    width: 554px;
+    &__image {
+      width: 554px;
+    }
   }
 }
 
@@ -43,8 +43,8 @@
   .modal {
     width: 906px;
     height: 605px;
-  }
-  .modal__image {
-    width: 906px;
+    &__image {
+      width: 906px;
+    }
   }
 }
