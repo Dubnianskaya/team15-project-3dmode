@@ -45,7 +45,7 @@
           <option value="100mkr">100 мікрон</option>
           <option value="#">Труднощі у виборі - ми допоможемо</option>
         </select>
-    </div>
+      </div>
       <div class="select order-form__field">
         <select class="order-form__select-option" id="" name="">
           <option selected>Колір</option>
@@ -66,15 +66,18 @@
             placeholder="Залишіть своє повідомлення"
           ></textarea>
 
-          <svg class="order-form__message-icon">
-            <use href="./images/icons.svg#icon-clip"></use>
-          </svg>
+          <label for="clip">
+            <input type="file" id="clip" hidden />
+            <svg class="order-form__message-icon">
+              <use href="./images/icons.svg#icon-clip"></use>
+            </svg>
+          </label>
         </div>
       </label>
-      <p class="order-form__note"> *Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
-      
+      <p class="order-form__note">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+
       <div class="order-form__btn">
-          <button class="button--order button-base" type="submit">ВІДПРАВИТИ</button>
+        <button class="button--order button-base" type="submit">ВІДПРАВИТИ</button>
       </div>
     </form>
   </div>
