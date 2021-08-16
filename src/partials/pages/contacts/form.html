@@ -1,10 +1,10 @@
 <!-- Ниже пишем код для Form СТРАНИЦЫ Contacts -->
 <section class="section section--form">
-  <div class="container">
+  <div class="container container-form">
     <form action="#" class="modal-form">
       <h3 class="form-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
 
-      <label class="contact-form"
+      <label class="contact-form contact-form__name"
         >Ім’я
         <input
           type="text"
@@ -33,16 +33,42 @@
           name="user-message"
           class="contact-form__message"
           placeholder="Залишіть своє повідомлення"
+          style="resize: none"
         ></textarea>
         <svg class="contact-form__message-icon">
           <use href="./images/icons.svg#icon-clip"></use>
         </svg>
       </label>
-      <p class="contact-form__note">
-        Прикріпіть зображення / креслення / STL / Obj / CAD-модель" /
-      </p>
+      <p class="contact-form__note">Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
 
       <button class="button--order button-base button-contact" type="submit">ВІДПРАВИТИ</button>
     </form>
+
+    <section class="section section-contacts">
+      <div class="contacts-info">
+        <div class="contacts-info__container contacts-info-tel">
+          <h3 class="contacts-info__tel-title">ТЕЛЕФОНИ</h3>
+          <ul class="list contacts-info__tel-list contacts-info-list">
+            <li class="contacts-inf__list-item">+38 (095) -73-84-551</li>
+            <li class="">+38 (098) -00-25-235</li>
+          </ul>
+        </div>
+        <div class="contacts-info__container contacts-info__email">
+          <h3 class="contacts-info__email-title">Email</h3>
+          <ul class="list contacts-info__email-list contacts-info-list">
+            <li>3dfreedom.info@gmail.com</li>
+          </ul>
+        </div>
+        <div class="contacts-info__container contacts-info__work-schedule">
+          <h3 class="contacts-info__work-schedule-title">Робочий час</h3>
+          <ul class="list contacts-info__work-schedule-list contacts-info-list">
+            <li class="">Пн-пт:</li>
+            <li class="contacts-inf__list-item">з 8:00 до 19:00</li>
+            <li class="">Сб, Нд:</li>
+            <li class="">з 10:00 до 17:00</li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </div>
 </section>
