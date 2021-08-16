@@ -38,7 +38,9 @@
     right: 0;
     margin-top: -6.5px;
     cursor: pointer;
+    pointer-events: none;
     
+
 
 }
 
@@ -58,7 +60,7 @@
     display: block;
     width: 100%;
     outline: none;
-
+    
 
 
    
@@ -84,7 +86,10 @@
 
 .order-form__select-option{
     width: 100%;
+
 }
+
+
 .order-form__field_massege{
     
     font-style: normal;
@@ -135,6 +140,10 @@
     top: 161px;
     left: 237px;
   }
+.order-form__message-icon:hover,
+.order-form__message-icon:focus {
+  fill: var(--accent-color);
+}
 
 .order-form__note{
     font-family: var(--main-font-regular);
@@ -146,6 +155,11 @@
     color: var(--color-light-placeholder);
     margin-bottom: 24px;
 }
+
+
+/////////////////////////////////////////
+
+
 
 @media screen and (min-width: 768px){
 
@@ -173,7 +187,7 @@
     .order-form__note{
         text-align: left;
     }
-    .button--order{
+    .order-form__btn{
         width: 177px;
         margin-left: auto;
         
