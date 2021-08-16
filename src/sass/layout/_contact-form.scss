@@ -1,3 +1,17 @@
+@media screen and (min-width: 1440px) {
+  .container-form {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-contacts {
+    width: 50%;
+  }
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -19,7 +33,7 @@
 @media screen and (min-width: 1440px) {
   .modal-form {
     width: 515px;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 .form-title {
@@ -36,6 +50,14 @@
     text-align: center;
   }
 }
+@media screen and (min-width: 1440px) {
+  .form-title {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+    text-align: start;
+  }
+}
 
 .contact-form {
   margin-bottom: 44px;
@@ -43,6 +65,19 @@
   font-size: 14px;
   line-height: 1.42;
   text-transform: capitalize;
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-form {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact-form__name {
+    font-size: 14px;
+    line-height: 1.42;
+  }
 }
 
 .contact-form__input {
@@ -60,6 +95,13 @@
   color: var(--secondary-color-dark);
 }
 
+@media screen and (min-width: 1440px) {
+  .contact-form__input {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
 .contact-form__message {
   margin-top: 4px;
   width: 100%;
@@ -69,6 +111,13 @@
   border-radius: 50px 0px;
   padding: 22px 0 0 20px;
 }
+@media screen and (min-width: 1440px) {
+  .contact-form__message {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
 .contact-form__field-message {
   position: relative;
   margin-bottom: 0;
@@ -90,6 +139,12 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .contact-form__message-icon {
+    left: 472px;
+  }
+}
+
 .contact-form__message-icon:hover,
 .contact-form__message-icon:focus {
   fill: var(--accent-color);
@@ -108,14 +163,19 @@
 
 @media screen and (min-width: 768px) {
   .contact-form__note {
-    margin-bottom: 88px;
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-form__note {
+    margin-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .button-contact {
     align-self: flex-end;
-    width: 280px;
-    padding: 16px 32px;
+    margin-bottom: 52px;
   }
 }

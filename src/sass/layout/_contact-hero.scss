@@ -113,6 +113,14 @@
   }
 }
 
+.contact-section__description--emoji:hover::after {
+  transform: rotate(15deg);
+}
+
+.contact-section__description--emoji:hover::after {
+  transition: 300ms ease-in-out;
+}
+
 @media screen and (min-width: 1440px) {
   .contact-section__description--emoji {
     font-size: 18px;
