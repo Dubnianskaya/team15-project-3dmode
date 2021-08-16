@@ -59,6 +59,7 @@
   .contacts-info {
     display: flex;
     flex-direction: column;
+    text-align: end;
   }
   .contacts-info__work-schedule-list {
     text-align: left;
@@ -75,5 +76,11 @@
   .contacts-info-list {
     font-size: 18px;
     line-height: 1.11;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .contacts-info-list {
+    text-align: end;
   }
 }
