@@ -1,10 +1,10 @@
 <!-- Ниже пишем код для Form СТРАНИЦЫ Contacts -->
-<section class="section section--form">
+<section class="section">
   <div class="container">
     <form action="#" class="modal-form">
-      <h3 class="form-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+      <h3 class="modal-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
 
-      <label class="contact-form"
+      <label class="contact-form contact-form__name"
         >Ім’я
         <input
           type="text"
@@ -33,14 +33,13 @@
           name="user-message"
           class="contact-form__message"
           placeholder="Залишіть своє повідомлення"
+          style="resize: none"
         ></textarea>
         <svg class="contact-form__message-icon">
           <use href="./images/icons.svg#icon-clip"></use>
         </svg>
       </label>
-      <p class="contact-form__note">
-        Прикріпіть зображення / креслення / STL / Obj / CAD-модель" /
-      </p>
+      <p class="contact-form__note">Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
 
       <button class="button--order button-base button-contact" type="submit">ВІДПРАВИТИ</button>
     </form>

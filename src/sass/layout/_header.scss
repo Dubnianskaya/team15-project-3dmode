@@ -1,7 +1,7 @@
 .header {
   padding-top: 29px;
   padding-bottom: 32px;
-  outline: 1px solid yellowgreen;
+  // outline: 1px solid yellowgreen;
   &__logo {
     display: block;
     width: 101px;
@@ -124,6 +124,7 @@
     }
     &__navigation {
       display: block;
+      z-index: 10;
     }
 
     &__menu {
@@ -138,7 +139,6 @@
       display: flex;
       align-items: center;
       position: relative;
-      z-index: 10;
 
       & > .link {
         transition-property: color;
@@ -168,6 +168,14 @@
       line-height: 1.17;
       letter-spacing: 0.01em;
       color: var(--secondary-color-dark);
+      transition-property: color;
+      transition-duration: var(--main-transition-duration);
+      transition-timing-function: var(--main-transition-function);
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
     }
 
     &__iconwrapper--menu {

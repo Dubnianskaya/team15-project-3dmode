@@ -26,6 +26,14 @@
   color: var(--secondary-color-dark);
   font-style: normal;
 }
+.nav-footer__link {
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-footer__link:hover,
+.nav-footer__link:focus {
+  color: var(--accent-color);
+}
+
 .footer--blue-text {
   font-family: var(--main-font-regular);
   font-weight: var(--main-font-weight);
@@ -34,6 +42,12 @@
   text-align: center;
   color: #487996;
   font-style: normal;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .nav-footer {
@@ -49,6 +63,14 @@
 
   &__item:not(:last-child) {
     margin-bottom: 8px;
+  }
+}
+.seti-footer__link {
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 }
 
