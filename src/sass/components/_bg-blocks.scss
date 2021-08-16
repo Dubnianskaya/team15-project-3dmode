@@ -19,40 +19,41 @@
     height: 144px;
   }
 
-  .container--main-hero {
+  .container--bg-hero {
     position: relative;
     // overflow: hidden;
   }
-  .bg-main-hero {
-    .bg-block-header {
-      &--1 {
-        top: -156px;
-        left: 32px;
-        border-radius: 72px 0px 0px 0px;
-      }
-      &--2 {
-        top: -156px;
-        left: 293px;
-        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-        border-radius: 72px 0px 0px 72px;
-        transform: rotate(180deg);
-      }
-      &--3 {
-        height: 111px;
-        top: -123px;
-        left: 570px;
-        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-        border-radius: 0px 0px 72px 72px;
-      }
-      &--4 {
-        // background-color: red;
-        top: -156px;
-        right: 293px;
-        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-        border-radius: 72px 0px 0px 72px;
-      }
-    }
 
+  .bg-block-header {
+    &--1 {
+      top: -156px;
+      left: 32px;
+      border-radius: 72px 0px 0px 0px;
+    }
+    &--2 {
+      top: -156px;
+      left: 293px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 72px 0px 0px 72px;
+      transform: rotate(180deg);
+    }
+    &--3 {
+      height: 111px;
+      top: -123px;
+      left: 570px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 0px 0px 72px 72px;
+    }
+    &--4 {
+      // background-color: red;
+      top: -156px;
+      right: 293px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 72px 0px 0px 72px;
+    }
+  }
+
+  .bg-main-hero {
     .bg-block-left {
       &--1 {
         left: 32px;
@@ -246,4 +247,45 @@
       }
     }
   }
+
+  .bg-block-body {
+    .block {
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    }
+    &--1 {
+      top: 0;
+      right: 13px;
+      border-radius: 0px 0px 72px 0px;
+      transform: rotate(90deg);
+    }
+    &--2 {
+      top: 121px;
+      left: 13px;
+      border-radius: 0px 0px 72px 0px;
+    }
+    &--3 {
+      width: 120px;
+      top: 508px;
+      right: 0;
+      border-radius: 72px 0px 40px 0px;
+    }
+    &--4 {
+      width: 72px;
+      top: 918px;
+      left: 0;
+      border-radius: 0px 72px 72px 0px;
+      border-radius: 0px 72px 72px 0px;
+    }
+    &--5 {
+      width: 85px;
+      top: 1080px;
+      right: 0;
+      border-radius: 72px 2px 2px 72px;
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
 }
