@@ -1,6 +1,6 @@
 .backdrop {
   position: fixed;
-  z-index: 999;
+  z-index: 100;
 
   top: 0;
   left: 0;
@@ -14,7 +14,6 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    z-index: 999;
   }
 }
 
@@ -25,40 +24,119 @@
   transform: translate(-50%, -50%);
   width: 236px;
   height: 157px;
+
+  &__iconwrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5%;
+    left: 95%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--main-color-light);
+    fill: var(--main-color-dark);
+    z-index: 4;
+    transition: background-color 250ms var(--main-transition-function);
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      fill: var(--accent-color);
+      background-color: #ffffff;
+    }
+  }
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-next {
+  right: -40px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+}
+
+.slick-prev::before {
+  transform: rotate(-45deg);
+}
+
+.slick-next::before {
+  transform: rotate(135deg);
+  right: -50px;
+}
+
+.slider__item {
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding-top: 157px;
 }
 
 @media screen and (min-width: 768px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 554px;
     height: 369px;
+  }
+
+  .slick-prev {
+    left: -50px;
+  }
+
+  .slick-next {
+    right: -50px;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    width: 15px;
+    height: 15px;
+  }
+
+  .slider__item {
+    padding-top: 369px;
   }
 }
 
 @media screen and (min-width: 1444px) {
-  // .modal {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   width: 906px;
-  //   height: 605px;
-  // }
+  .modal {
+    width: 906px;
+    height: 605px;
+  }
 
-  // .slider {
-  // }
+  .slick-prev {
+    left: -60px;
+  }
+
+  .slick-next {
+    right: -60px;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    width: 20px;
+    height: 20px;
+  }
 
   .slider__item {
-    background-size: contain;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    padding-top: 400px;
-
-    // padding-top: 600px;
-    // border: 1px solid #000000;
-    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 605px;
   }
 }
