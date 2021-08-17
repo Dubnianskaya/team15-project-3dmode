@@ -28,8 +28,12 @@
 .contacts-inf__list-item {
   margin-bottom: 8px;
 }
-.contacts-info__container:not(:last-child) {
+.contacts-info__container{
   margin-bottom: 24px;
+}
+.contacts-info__work-schedule{
+  margin-bottom: 0;
+
 }
 .contacts-info__email-list {
   text-transform: none;
@@ -47,6 +51,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .contacts-info__container{
+    margin-bottom: 0;
+  }
   .contacts-info__work-schedule-list {
     text-align: right;
   }
@@ -59,14 +66,22 @@
   .contacts-info {
     display: flex;
     flex-direction: column;
-    text-align: end;
+    text-align:left;
+    
   }
   .contacts-info__work-schedule-list {
     text-align: left;
+    
   }
-  .contacts-info__container:not(:last-child) {
-    margin-bottom: 68px;
+  .contacts-info__container{
+    margin-bottom: 30px;
   }
+  .contacts-info__work-schedule{
+    margin-bottom: 75.74px;
+
+  }
+  
+  
   .contacts-info__tel-title,
   .contacts-info__work-schedule-title,
   .contacts-info__email-title {
@@ -82,15 +97,18 @@
   .contacts-info--order {
     text-align: right;
     align-items: flex-end;
+    
   }
+  
 
   .contacts-info__work-schedule-list--order {
     text-align: right;
   }
 
-  .contacts-info__container--order:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  // .contacts-info__container--order:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
+  
 
   .contacts-inf__list-item {
     margin-bottom: 18px;
@@ -102,7 +120,7 @@
   }
 
   .contacts-info__mosaic {
-    margin-top: 45px;
+    
     width: 438px;
     height: 294px;
     background-repeat: no-repeat;
@@ -122,6 +140,6 @@
 
 @media screen and (min-width: 1444px) {
   .contacts-info-list {
-    text-align: end;
+    text-align: left;
   }
 }
