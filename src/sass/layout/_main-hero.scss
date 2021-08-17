@@ -60,6 +60,8 @@
   }
 }
 .main-hero-text {
+  display: block;
+
   font-family: var(--secondary-font-regular);
   font-weight: var(--main-font-weight);
   font-size: var(--main-text-size);
