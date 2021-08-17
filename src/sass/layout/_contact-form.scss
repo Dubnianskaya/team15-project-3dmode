@@ -5,8 +5,6 @@
     flex-flow: row-reverse;
     margin: 0 auto;
     max-width: 1444px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -98,6 +96,12 @@
   cursor: pointer;
   border-color: var(--main-color-dark);
   color: var(--secondary-color-dark);
+  outline: 0;
+  outline-offset: 0;
+}
+
+.input::placeholder {
+  color: var(secondary-color-dark);
 }
 
 @media screen and (min-width: 1440px) {
@@ -115,6 +119,9 @@
   box-sizing: border-box;
   border-radius: 50px 0px;
   padding: 22px 0 0 20px;
+  cursor: pointer;
+  outline: 0;
+  outline-offset: 0;
 }
 @media screen and (min-width: 1440px) {
   .contact-form__message {
@@ -136,6 +143,7 @@
   fill: #cdcdcd;
   top: 175px;
   left: 237px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
