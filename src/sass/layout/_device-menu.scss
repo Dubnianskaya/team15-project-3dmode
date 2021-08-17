@@ -71,6 +71,10 @@
     -moz-text-stroke-width: 1px;
     -moz-text-stroke-color: var(--main-color-dark);
   }
+
+  &--services:hover {
+    cursor: default;
+  }
 }
 .device-menu-list__link--marker {
   text-transform: none;

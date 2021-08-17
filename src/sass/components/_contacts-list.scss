@@ -72,11 +72,52 @@
   .contacts-info__email-title {
     font-size: 36px;
     line-height: 1.25;
+    margin-bottom: 18px;
   }
   .contacts-info-list {
     font-size: 18px;
     line-height: 1.11;
   }
+
+  .contacts-info--order {
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  .contacts-info__work-schedule-list--order {
+    text-align: right;
+  }
+
+  .contacts-info__container--order:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .contacts-inf__list-item {
+    margin-bottom: 18px;
+  }
+
+  .contacts-inf__list-item--order {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .contacts-info__mosaic {
+    margin-top: 45px;
+    width: 438px;
+    height: 294px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../images/order/florarium_group_desktop.jpg");
+  }
+}
+    
+@media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+  (min-resolution: 192dpi) and (min-width: 1444px),
+  (min-resolution: 2dppx) and (min-width: 1444px) {
+    .contacts-info__mosaic {
+      background-image: url("../images/order/florarium_group_desktop@2x.jpg");
+    }
 }
 
 @media screen and (min-width: 1444px) {
