@@ -54,12 +54,14 @@
         max-width: 315px;
         margin-bottom: 32px;
         margin-right: 18px;
+        flex-basis: calc((100% - 36px) / 2);
       }
     
       @media screen and (min-width: 1444px) {
         max-width: 515px;
         margin-bottom: 56px;
         margin-right: 32px;
+        flex-basis: calc((100% - 64px) / 2);
       }
     }
   
