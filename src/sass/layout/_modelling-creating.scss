@@ -1,4 +1,6 @@
 .creating__title {
+  margin-bottom: 16px;
+  max-width: 255px;
   font-weight: 700;
   font-size: var(--main-text-size);
   line-height: 1.25;
@@ -25,17 +27,20 @@
   .creating__item {
     flex-basis: calc((100% - 48px) / 4);
   }
-}
-
-.creating__title {
-  font-size: 24px;
+  .creating__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    max-width: 600px;
+  }
 }
 
 // ============= 1444+ ================
 
 @media screen and (min-width: 1444px) {
   .creating__title {
+    margin-bottom: 52px;
     font-size: 36px;
+    max-width: 661px;
   }
   .creating__list {
     margin-top: -20px;
