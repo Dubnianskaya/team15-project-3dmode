@@ -44,25 +44,22 @@
       margin-top: -56px;
       margin-left: -32px;
     }
-  }
-
-  &__item {
-    max-width: 280px;
-    margin-bottom: 24px;
-    @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 36px) / 2);
-      max-width: 315px;
-      margin-top: 32px;
-      margin-left: 18px;
-      margin-bottom: 0;
-    }
-
-    @media screen and (min-width: 1444px) {
-      flex-basis: calc((100%-62px) / 2);
-      max-width: 515px;
-      margin-top: 56px;
-      margin-left: 31px;
-    }
+    &__item {
+      max-width: 280px;
+      margin-bottom: 24px;
+      @media screen and (min-width: 768px) {
+        max-width: 315px;
+        margin-bottom: 32px;
+        margin-right: 18px;
+        flex-basis: calc((100% - 36px) / 2);
+      }
+    
+      @media screen and (min-width: 1444px) {
+        max-width: 515px;
+        margin-bottom: 56px;
+        margin-right: 32px;
+        flex-basis: calc((100% - 64px) / 2);
+      }
   }
 
   &__desc {
