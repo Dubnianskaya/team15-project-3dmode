@@ -51,18 +51,26 @@
 }
 
 .device-menu-list__item {
+  display: flex;
+  align-items: center;
   &:not(:last-child) {
     margin-bottom: 24px;
   }
 }
 .device-menu-list__link {
-  display: block;
+  display: inline-block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
   color: var(--main-color-dark);
+  transition: color var(--main-transition-duration) var(--main-transition-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
   &.device-menu-list__link-current {
     color: transparent;
@@ -70,6 +78,15 @@
     -webkit-text-stroke-color: var(--main-color-dark);
     -moz-text-stroke-width: 1px;
     -moz-text-stroke-color: var(--main-color-dark);
+    &:hover,
+    &:focus {
+      -webkit-text-stroke-color: var(--accent-color);
+      -moz-text-stroke-color: var(--accent-color);
+    }
+  }
+
+  &--services:hover {
+    cursor: default;
   }
 }
 .device-menu-list__link--marker {
