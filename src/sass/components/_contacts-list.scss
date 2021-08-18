@@ -87,7 +87,6 @@
 
   }
   
-  
   .contacts-info__tel-title,
   .contacts-info__work-schedule-title,
   .contacts-info__email-title {
@@ -105,16 +104,15 @@
     align-items: flex-end;
     
   }
-  
 
-  .contacts-info__work-schedule-list--order {
+  .contacts-info-list {
+    text-align: left;
+  }
+  
+  .contacts-info__work-schedule-list--order,
+  .contacts-info__list--order {
     text-align: right;
   }
-
-  // .contacts-info__container--order:not(:last-child) {
-  //   margin-bottom: 30px;
-  // }
-  
 
   .contacts-inf__list-item {
     margin-bottom: 18px;
@@ -123,6 +121,10 @@
   .contacts-inf__list-item--order {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .contacts-inf__list-item--contact {
+    display: flex;
   }
 
   .contacts-info__mosaic {
@@ -142,10 +144,4 @@
     .contacts-info__mosaic {
       background-image: url("../images/order/florarium_group_desktop@2x.jpg");
     }
-}
-
-@media screen and (min-width: 1444px) {
-  .contacts-info-list {
-    text-align: left;
-  }
 }
