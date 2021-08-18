@@ -186,8 +186,12 @@
   .scanning__description {
     font-size: 18px;
     line-height: 1.28;
-    margin-top: 38px;
     max-width: 180px;
+    margin-top: 0px;
+  }
+
+  .scanning__picture {
+    margin-bottom: 27px;
   }
 }
 //перенос текста в мобильной версии на третью строку//
