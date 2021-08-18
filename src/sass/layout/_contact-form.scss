@@ -193,7 +193,8 @@
   position: relative;
   margin-bottom: 44px;
 }
-.contact-form__input:focus + .contact-form {
+.contact-form__input:focus + .contact-form,
+.contact-form__input:not(:placeholder-shown) + .contact-form {
   transform: translateY(-50px);
   font-size: 14px;
   line-height: 1.42;
