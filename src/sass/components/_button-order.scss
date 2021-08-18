@@ -1,6 +1,11 @@
+.buttonwrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .button--order {
   display: block;
-
+  cursor: pointer;
   max-width: 280px;
   padding: 16px 32px;
   border-radius: 30.5px;
@@ -25,5 +30,6 @@
   &:active {
     box-shadow: none;
     background-color: var(--accent-color);
+    transform: scale(0.95);
   }
 }
