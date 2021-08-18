@@ -13,14 +13,30 @@
 }
 .main-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.main-container__title {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: row;
+  }
 }
 
 .order-title {
   font-family: var(--main-font-regular);
   color: var(--main-color-dark);
+  display: block;
   max-width: 280px;
-  height: 30px;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
@@ -31,12 +47,10 @@
   @media screen and (min-width: 768px) {
     font-size: 36px;
     max-width: 648px;
-    margin-bottom: 34px;
   }
   @media screen and (min-width: 1444px) {
     font-size: 48px;
     max-width: 624px;
-    margin-bottom: 45px;
   }
 }
 
@@ -48,28 +62,29 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-right: 20px;
+    margin-right: 32px;
   }
 
   @media screen and (min-width: 1444px) {
     display: flex;
-    // margin-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 320px) {
   .order-lamp {
-    width: 280px;
+    width: 100%;
     height: 170px;
-    background-image: url('../images/order/lamp_phone.jpg');
-    background-size: 280px 170px;
+    background-image: url(../images/order/lamp_phone.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .order-lamp {
-      background-image: url('../images/order/lamp_phone@2x.jpg');
+      background-image: url(../images/order/lamp_phone@2x.jpg);
     }
   }
 }
@@ -78,7 +93,7 @@
   .order-lamp {
     width: 247px;
     height: 116px;
-    background-image: url('../images/order/lamp_tablet.jpg');
+    background-image: url(../images/order/lamp_tablet.jpg);
     background-size: 247px 116px;
   }
 
@@ -86,7 +101,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .order-lamp {
-      background-image: url('../images/order/lamp_tablet@2x.jpg');
+      background-image: url(../images/order/lamp_tablet@2x.jpg);
     }
   }
 }
@@ -95,7 +110,7 @@
   .order-lamp {
     width: 515px;
     height: 315px;
-    background-image: url('../images/order/lamp_desktop.jpg');
+    background-image: url(../images/order/lamp_desktop.jpg);
     background-size: 515px 315px;
   }
 
@@ -103,7 +118,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .order-lamp {
-      background-image: url('../images/order/lamp_desktop@2x.jpg');
+      background-image: url(../images/order/lamp_desktop@2x.jpg);
     }
   }
 }
@@ -111,8 +126,6 @@
 .order-hero__text {
   font-family: var(--main-font-regular);
   color: var(--secondary-color-dark);
-  // margin-right: auto;
-  // margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -120,11 +133,9 @@
     margin-bottom: 24px;
   }
   @media screen and (min-width: 1444px) {
-    // height: 46px;
     max-width: 515px;
     font-size: 18px;
     line-height: 1.28;
-    margin-left: 14px;
     margin-bottom: 40px;
   }
 }
@@ -197,7 +208,7 @@
 
 .order-hero__photo {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   bottom: 0px;
 
   @media (max-width: 1444px) {
