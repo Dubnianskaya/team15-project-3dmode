@@ -1,5 +1,5 @@
 .order-hero {
-  padding-top: 12px;
+  // padding-top: 12px;
   padding-bottom: 100%;
 
   @media screen and (min-width: 768px) {
@@ -40,8 +40,9 @@
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
-  text-align: justify;
   margin-bottom: 25px;
+  display: block;
+  text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     font-size: 36px;
