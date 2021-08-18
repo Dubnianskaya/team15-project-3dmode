@@ -45,7 +45,7 @@
 .modal-form__title {
   font-size: 18px;
   line-height: 1.27;
-  margin-bottom: 8px;
+  margin-bottom: 44px;
   color: var(--main-color-dark);
 }
 
@@ -60,29 +60,25 @@
   .modal-form__title {
     font-size: 36px;
     line-height: 1.25;
-    margin-bottom: 16px;
     text-align: start;
   }
 }
 
 .contact-form {
-  margin-bottom: 44px;
   color: var(--secondary-color-dark);
   font-size: 14px;
   line-height: 1.42;
   text-transform: capitalize;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 @media screen and (min-width: 1440px) {
   .contact-form {
     font-size: 18px;
     line-height: 1.1;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .contact-form__name {
-    font-size: 14px;
-    line-height: 1.42;
   }
 }
 
@@ -103,10 +99,6 @@
   outline-offset: 0;
 }
 
-.input::placeholder {
-  color: var(secondary-color-dark);
-}
-
 @media screen and (min-width: 1440px) {
   .contact-form__input {
     font-size: 18px;
@@ -115,6 +107,7 @@
 }
 
 .contact-form__message {
+  margin-bottom: 4px;
   margin-top: 4px;
   width: 100%;
   height: 199px;
@@ -126,6 +119,7 @@
   outline: 0;
   outline-offset: 0;
 }
+
 @media screen and (min-width: 1440px) {
   .contact-form__message {
     font-size: 18px;
@@ -135,7 +129,6 @@
 
 .contact-form__field-message {
   position: relative;
-  margin-bottom: 0;
 }
 
 .contact-form__message-icon {
@@ -173,7 +166,6 @@
   font-size: 16px;
   line-height: 1.25;
   color: #cdcdcd;
-  margin-top: 4px;
   margin-bottom: 24px;
 }
 
@@ -194,4 +186,18 @@
     align-self: flex-end;
     margin-bottom: 52px;
   }
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 44px;
+}
+.contact-form__input:focus + .contact-form {
+  transform: translateY(-50px);
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+.form-field__contact-form {
+  margin-bottom: 4px;
 }
