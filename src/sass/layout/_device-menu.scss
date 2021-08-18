@@ -31,8 +31,6 @@
   width: 22px;
   height: 22px;
   fill: var(--main-color-dark);
-  // margin-left: 43px;
-  // margin-right: 43px;
   cursor: pointer;
   transition: fill var(--main-transition-duration) var(--main-transition-function);
   &:hover,
@@ -85,10 +83,6 @@
       -moz-text-stroke-color: var(--accent-color);
     }
   }
-
-  &--services:hover {
-    cursor: default;
-  }
 }
 .device-menu-list__link--marker {
   text-transform: none;
@@ -103,6 +97,17 @@
     transform: translateY(-50%);
     margin-right: 11px;
   }
+}
+
+.device-menu-list__text {
+  display: inline-block;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-color-dark);
 }
 
 // ============= 768+ ================
