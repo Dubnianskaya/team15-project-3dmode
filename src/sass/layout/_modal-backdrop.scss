@@ -30,13 +30,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 5%;
+    top: 4%;
     left: 95%;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: var(--main-color-light);
-    fill: var(--main-color-dark);
+    width: 30px;
+    height: 30px;
+    // border-radius: 50%;
+    // background-color: var(--secondary-color-dark);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+    background-color: transparent;
+    fill: var(--background-color-white);
+    border-radius: 72px 72px;
+
     z-index: 4;
     transition: background-color 250ms var(--main-transition-function);
 
@@ -44,7 +49,8 @@
     &:focus {
       cursor: pointer;
       fill: var(--accent-color);
-      background-color: #ffffff;
+      background-color: var(--secondary-color-dark);
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     }
   }
 }
@@ -91,7 +97,29 @@
   padding-top: 157px;
 }
 
+@media screen and (max-width: 768px) {
+  .modal__iconwrapper {
+    width: 15px;
+    height: 15px;
+  }
+
+  .modal__icon {
+    width: 5px;
+    height: 5px;
+  }
+  .modal__iconwrapper {
+    top: 5%;
+    left: 90%;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .modal__iconwrapper {
+    width: 25px;
+    height: 25px;
+    left: 89%;
+  }
+
   .modal {
     width: 554px;
     height: 369px;
