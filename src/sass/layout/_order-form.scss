@@ -2,10 +2,11 @@
   .container-order {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: 1444px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 189px;
+    padding-right: 189px;
   }
 }
 
@@ -47,7 +48,6 @@
   
 }
 
-
 .select::before {
   content: '';
   display: none;
@@ -68,8 +68,6 @@
   
  
 }
-
-
 
 .select select {
   border: 0;
@@ -147,6 +145,7 @@
   fill: #cdcdcd;
   top: 161px;
   left: 237px;
+  cursor: pointer;
 }
 .order-form__message-icon:hover,
 .order-form__message-icon:focus {
@@ -275,6 +274,7 @@
   display: block;
   width: 100%;
   outline: none;
+  cursor: pointer;
 }
 .order-form__input {
   width: 100%;

@@ -47,7 +47,11 @@
   }
 
   &__lang {
+    display: block;
     margin-left: 21px;
+    border: none;
+    padding: 10px 0;
+    background-color: transparent;
     text-transform: uppercase;
     font-family: var(--secondary-font-regular);
     font-weight: 700;
@@ -61,6 +65,8 @@
     &:focus {
       color: var(--accent-color);
       cursor: pointer;
+      // background-color: var(--background-color-white);
+      // box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -114,6 +120,13 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1443px) {
+  .header__icon {
+    margin-left: 157px;
+    margin-right: 57px;
+  }
+}
+
 @media screen and (min-width: 1444px) {
   .header {
     padding-top: 40px;
@@ -163,6 +176,9 @@
     }
 
     &__menulink {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
       font-family: var(--secondary-font-regular);
       font-size: 18px;
       line-height: 1.17;
@@ -225,7 +241,7 @@
   transform: translateX(-50%);
 
   &__item:first-child {
-    margin-top: 8px;
+    margin-top: -6px;
   }
 
   &__item:not(:last-child) {

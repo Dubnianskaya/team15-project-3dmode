@@ -11,6 +11,13 @@
   text-transform: uppercase;
   margin-bottom: 8px;
 }
+
+@media screen and (min-width: 1444px) {
+  .container-contacts {
+    padding-right: 100px;
+  }
+}
+
 .contacts-info__email-title {
   text-transform: none;
 }
@@ -67,7 +74,6 @@
     display: flex;
     flex-direction: column;
     text-align:left;
-    
   }
   .contacts-info__work-schedule-list {
     text-align: left;
@@ -126,10 +132,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url("../images/order/florarium_group_desktop.jpg");
+    background-image: url('../images/order/florarium_group_desktop.jpg');
   }
 }
-    
+
 @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
   (min-resolution: 192dpi) and (min-width: 1444px),
   (min-resolution: 2dppx) and (min-width: 1444px) {

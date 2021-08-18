@@ -1,6 +1,6 @@
 <!-- Ниже пишем код для Form СТРАНИЦЫ Contacts -->
 <section class="section">
-  <div class="container">
+  <div class="container container--column">
     <form action="#" class="modal-form">
       <h3 class="modal-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
 
@@ -35,9 +35,12 @@
           placeholder="Залишіть своє повідомлення"
           style="resize: none"
         ></textarea>
-        <svg class="contact-form__message-icon">
-          <use href="./images/icons.svg#icon-clip"></use>
-        </svg>
+        <label for="clip">
+          <input type="file" id="clip" hidden />
+          <svg class="contact-form__message-icon">
+            <use href="./images/icons.svg#icon-clip"></use>
+          </svg>
+        </label>
       </label>
       <p class="contact-form__note">Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
 

@@ -1,5 +1,5 @@
 .section.photos--section {
-  padding-bottom: 153px;
+  padding-bottom: 84px;
 }
 
 .photos {
@@ -22,11 +22,15 @@
   &__image {
     max-width: 280px;
   }
+
+  &__icon {
+    margin: 40px auto 0 auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .section.photos--section {
-    padding-bottom: 129px;
+    padding-bottom: 60px;
   }
 
   .photos {
@@ -66,7 +70,7 @@
 
 @media screen and (min-width: 1444px) {
   .section.photos--section {
-    padding-bottom: 201px;
+    padding-bottom: 108px;
   }
 
   .photos {
@@ -86,6 +90,10 @@
 
     &__item:nth-child(n + 10) {
       margin-bottom: 0;
+    }
+
+    &__icon {
+      margin: 64px auto 0 auto;
     }
   }
 }

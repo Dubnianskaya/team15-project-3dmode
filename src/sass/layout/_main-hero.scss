@@ -60,6 +60,8 @@
   }
 }
 .main-hero-text {
+  display: block;
+
   font-family: var(--secondary-font-regular);
   font-weight: var(--main-font-weight);
   font-size: var(--main-text-size);
@@ -73,5 +75,21 @@
   }
   @media screen and (min-width: 1444px) {
     font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__arrow {
+    position: absolute;
+    cursor: pointer;
+    bottom: 60px;
+    left: 135px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .hero__arrow {
+    bottom: 65px;
+    left: 240px;
   }
 }
