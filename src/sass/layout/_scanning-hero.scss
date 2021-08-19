@@ -49,7 +49,13 @@
     }
   }
 }
+.visible-lg {
+  display: none;
+}
 @media screen and (min-width: 1444px) {
+  .visible-lg {
+    display: initial;
+  }
   .scanning-hero {
     font-size: 18px;
     line-height: 1.28;
@@ -57,7 +63,10 @@
     margin-bottom: 24px;
   }
   .scanning-container {
-    background-image: none;
+    background-image:  url(../images/scanning/scanning_desktop.jpg);
+    background-size: auto 368px;
+    background-repeat: no-repeat;
+    background-position: right 189px bottom;
   }
   .scanning__bg {
     display: none;
@@ -77,18 +86,19 @@
     margin-left: 32px;
   }
   .scanning-section {
-    background-image: url(../images/scanning/scanning_desktop.jpg);
-    background-size: 515px 368px;
-    background-repeat: no-repeat;
-    background-position: left 749px top 111px;
+    background-image:none;
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px),
     screen and (min-resolution: 192dpi) and (min-width: 280px),
     screen and (min-resolution: 2dppx) and (min-width: 280px) {
-    .scanning-section {
-      background-image: url(../images//scanning/scanning_desktop@2x.jpg);
+    .scanning-container {
+      background-image: url(../images/scanning/scanning_desktop@2x.jpg);
     }
   }
 }
 
-//прибить картнку к правому углу//
+@media screen and (min-width: 1444px) {
+  .container--bg-hero--scann {
+    padding-bottom: 90px !important;
+  }
+}
