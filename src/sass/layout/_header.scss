@@ -221,6 +221,10 @@
     }
   }
 }
+.header--link-current {
+  color: var(--main-color-dark);
+  text-decoration: underline;
+}
 
 .arrow-up {
   display: none;
