@@ -1,12 +1,7 @@
 .order-hero {
-  // padding-top: 12px;
   padding-bottom: 100%;
 
-  @media screen and (min-width: 768px) {
-    // padding-top: 23px;
-  }
   @media screen and (min-width: 1444px) {
-    // padding-bottom: 100px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -58,7 +53,6 @@
   flex-direction: row;
   flex-wrap: nowrap;
   border-radius: 15px;
-  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -194,15 +188,15 @@
 .order-hero__photo {
   &-track {
     border-radius: 0% 60% 60% 0%;
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
   }
   &-led {
     border-radius: 60% 0% 60% 0%;
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
   }
   &-mushroom {
     border-radius: 0% 0% 60% 0%;
-    filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.3);
   }
 }
 
