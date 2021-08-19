@@ -270,6 +270,7 @@
 .order-form__field {
   margin-bottom: 44px;
 }
+
 .select {
   position: relative;
   border-bottom: 1px solid var(--main-color-dark);
@@ -440,5 +441,21 @@
   .order-form__note {
     font-size: 18px;
     line-height: 1.11;
+  }
+}
+
+.select-option__item {
+  font-family: Cera Pro;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.11;
+
+  color: #2b2b2b;
+  padding-left: 8px;
+
+  &:focus,
+  &:hover {
+    background-color: rgba(72, 121, 150, 0.5);
+    color: #ffffff;
   }
 }
