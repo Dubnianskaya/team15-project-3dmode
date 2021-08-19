@@ -3,29 +3,32 @@
   <div class="container container__form container--column">
     <form class="order-form">
       <h3 class="order-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+    <div class="order-form__field">
+            <input
+            type="text"
+            class="order-form__input"
+            placeholder=" "
+            name="user-name"
+            required
+            minlength="2"
+            pattern="[a-zA-Zа-яёА-ЯЁ]+"
+            title="Введите имя кирилицей или латинскими символами "
+          />
+    <label for="name" class="order-form__label">Ім’я</label>
+    </div>
+    <div class="order-form__field">
+      <input
+      type="email"
+      class="order-form__input"
+      placeholder=" "
+      name="user-email"
+      required
+    />
+<label for="name" class="order-form__label">Email</label>
+</div> 
+        
 
-      <label class="order-form__field">
-        <input
-          type="text"
-          class="order-form__input"
-          placeholder="Ім’я"
-          name="user-name"
-          required
-          minlength="2"
-          pattern="[a-zA-Zа-яёА-ЯЁ]+"
-          title="Введите имя кирилицей или латинскими символами "
-        />
-      </label>
-
-      <label class="order-form__field">
-        <input
-          type="email"
-          name="user-email"
-          class="order-form__input"
-          placeholder="Email"
-          required
-        />
-      </label>
+    
       <div class="select order-form__field">
         <select class="order-form__select-option" id="" name="">
           <option selected>Види пластика</option>
