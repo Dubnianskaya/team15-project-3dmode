@@ -2,7 +2,7 @@
   margin-bottom: 44px;
   position: relative;
 }
-.order-form__input{
+.order-form__input {
   font-family: inherit;
   font-size: 14px;
   line-height: 1.42;
@@ -17,17 +17,14 @@
   color: var(--secondary-color-dark);
   outline: 0;
   outline-offset: 0;
-  
-  
-
 }
 .order-form__input:focus + .order-form__label,
-.order-form__input:not(:placeholder-shown) + .order-form__label{
-  transform: translateY(-20px);
+.order-form__input:not(:placeholder-shown) + .order-form__label {
+  transform: translateY(-40px);
   font-size: 14px;
   line-height: 1.42;
 }
-.order-form__label{
+.order-form__label {
   color: var(--secondary-color-dark);
   font-size: 14px;
   line-height: 1.42;
@@ -36,10 +33,8 @@
   top: 10px;
   left: 0;
   transform: translateY(-50%);
-  transition: transform .25s linear;
+  transition: transform 0.25s linear;
 }
-
-
 
 .order-form {
   display: flex;
@@ -60,7 +55,6 @@
 .select {
   position: relative;
   border-bottom: 1px solid var(--main-color-dark);
-  
 }
 .select::after {
   content: '';
@@ -78,12 +72,7 @@
   margin-top: -6.5px;
   cursor: pointer;
   pointer-events: none;
-  
 }
-
-
-
-
 
 .select select {
   border: 0;
@@ -110,7 +99,7 @@
 }
 .order-form__select-option {
   width: 100%;
-  padding-left:19px;
+  padding-left: 19px;
 }
 .order-form__field_massege {
   font-style: normal;
@@ -124,11 +113,10 @@
 .order-form__massege-box {
   position: relative;
 }
-.form_massege-text{
+.form_massege-text {
   margin-bottom: 4px;
 }
 .order-form__massege {
-  
   border: 1px solid var(--main-color-dark);
   border-radius: 50px 0px;
   width: 100%;
@@ -180,16 +168,16 @@
     text-align: center;
     margin-bottom: 35px;
   }
-  .order-form__label{
+  .order-form__label {
     font-size: 16px;
     line-height: 1.25;
   }
   .order-form__input:focus + .order-form__label,
-  .order-form__input:not(:placeholder-shown) + .order-form__label{
-  transform: translateY(-50px);
-  font-size: 14px;
-  line-height: 1.42;
-}
+  .order-form__input:not(:placeholder-shown) + .order-form__label {
+    transform: translateY(-50px);
+    font-size: 14px;
+    line-height: 1.42;
+  }
   .order-form__field_massege {
     text-align: left;
   }
@@ -214,7 +202,7 @@
     padding-left: 189px;
     padding-right: 189px;
   }
-  
+
   .order-form {
     width: 515px;
     padding: 0;
@@ -225,10 +213,8 @@
     text-align: left;
   }
   .order-form__input {
-    
-      font-size: 18px;
-      line-height: 1.11;
-    
+    font-size: 18px;
+    line-height: 1.11;
   }
   .order-form__message-icon {
     left: 472px;

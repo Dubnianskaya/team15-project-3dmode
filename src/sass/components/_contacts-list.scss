@@ -20,7 +20,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1, 25;
+  line-height: 1.25;
   text-transform: capitalize;
 
   color: #2b2b2b;
@@ -108,16 +108,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url("../images/order/florarium_group_desktop.jpg");
+    background-image: url('../images/order/florarium_group_desktop.jpg');
   }
 }
-    
+
 @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
   (min-resolution: 192dpi) and (min-width: 1444px),
   (min-resolution: 2dppx) and (min-width: 1444px) {
-    .contacts-info__mosaic {
-      background-image: url("../images/order/florarium_group_desktop@2x.jpg");
-    }
+  .contacts-info__mosaic {
+    background-image: url('../images/order/florarium_group_desktop@2x.jpg');
+  }
 }
 
 @media screen and (min-width: 1444px) {
